@@ -5,7 +5,7 @@ import os
 # as multi-sdk loading isn't supported out of the box by metamod, and would require specifying the full path in the vdf
 # which in the end would ruin the multi-platform (unix, win etc) loading by metamod as it won't be able to append platform specific extension
 # so just fall back to the single binary.
-# Multi-sdk solutions should be manually loaded with a custom plugin loader (examples being sourcemod, stripper:source)
+# sMulti-sdk solutions should be manually loaded with a custom plugin loader (examples being sourcemod, stripper:source)
 for sdk_name in MMSPlugin.sdks:
   for cxx in MMSPlugin.all_targets:
     sdk = MMSPlugin.sdks[sdk_name]
